@@ -1,0 +1,2 @@
+news=[]
+det init()
