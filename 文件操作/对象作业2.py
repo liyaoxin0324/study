@@ -9,7 +9,7 @@
 class Singleton():
     _instance = None
     _initialized = False
-    def __new__(cls, *args, **kwargs):
+    def __new__(cls, *args, **kwargs):   #
         if cls._instance is None:
             cls._instance = super(Singleton, cls).__new__(cls)
         return cls._instance

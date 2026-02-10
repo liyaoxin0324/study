@@ -6,21 +6,20 @@
 # 编写测试代码，验证各种情况。
 
 
-def process_list(lst, index):
-    try:
-        value = lst[index]
-        return value
-    except IndexError:
-        return "索引不是有效值"
-    except TypeError:
-        return "参数类型错误"
-
-if __name__ == '__main__':
-    lst1 = [1, 2, 3, 4, 5]
-    lst2 = ([5, 6, 7, 8, 9],"a")
-    dict1 = {"1":"1", "2":"2", "3":"3", "4":"4", "5":"5"}
-    a = process_list(dict1, 2)
-    print(a)
+# def process_list(lst, index):
+#     try:
+#         value = lst[index]
+#         return value
+#     except IndexError:
+#         return "索引不是有效值"
+#     except TypeError:
+#         return "参数类型错误"
+#
+# if __name__ == '__main__':
+#     lst1 = [1, 8, 3, 4, 5]
+#     lst2 = ([5, 6, 7, 8, 9],"a")
+#     a = process_list(lst1, "2")
+#     print(a)
 
 
 

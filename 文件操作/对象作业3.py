@@ -13,7 +13,7 @@
 class LimitedInstances:
     _instance = []
     _max_instances = 3
-    def __new__(cls, *args, **kwargs):
+    def __new__(cls, *args, **kwargs):  #分配空间，返回实例对象
         if len(cls._instance) >= cls._max_instances:
             raise RuntimeError("已达最大实例数量限制（3个）")
         instance = super(LimitedInstances, cls).__new__(cls)
